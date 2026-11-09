@@ -1,0 +1,343 @@
+
+/* BASIC SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080e1c;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+/* NAVIGATION */
+header {
+    background: #0c1425;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #24334d;
+}
+
+.navbar {
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 23px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #39c6ff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #c7d3e6;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #39c6ff;
+}
+
+/* HERO SECTION */
+.hero {
+    max-width: 1250px;
+    margin: auto;
+    padding: 100px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.tagline,
+.section-label {
+    color: #39c6ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.2;
+    margin: 22px 0;
+}
+
+.hero h1 span {
+    color: #39c6ff;
+}
+
+.hero-text {
+    color: #aab8ce;
+    max-width: 570px;
+    margin-bottom: 35px;
+}
+
+.main-btn {
+    display: inline-block;
+    background: #168ed1;
+    color: white;
+    padding: 13px 28px;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: #36c5ff;
+    color: #07101d;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 0 35px #168ed155;
+}
+
+/* INTRODUCTION */
+.introduction {
+    padding: 75px 10%;
+    text-align: center;
+    background: #101c30;
+}
+
+.introduction h2,
+.topics h2,
+.practice h2 {
+    font-size: 36px;
+    margin: 12px 0 20px;
+}
+
+.introduction > p:last-child {
+    max-width: 800px;
+    margin: auto;
+    color: #b4c2d8;
+}
+
+/* TOPICS */
+.topics {
+    padding: 85px 8%;
+}
+
+.alternate {
+    background: #101c30;
+}
+
+.topics h2 {
+    margin-top: 10px;
+}
+
+.description {
+    color: #aab8ce;
+    margin-bottom: 35px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #111f35;
+    padding: 28px;
+    border: 1px solid #263b59;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #39c6ff;
+    box-shadow: 0 10px 30px #00000055;
+}
+
+.card h3 {
+    color: #42c8ff;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #b6c3d6;
+    margin-bottom: 18px;
+}
+
+.formula {
+    background: #07101e;
+    border-left: 3px solid #39c6ff;
+    padding: 15px;
+    color: #8be0ff;
+    font-size: 18px;
+    overflow-wrap: anywhere;
+}
+
+/* MAXWELL EQUATIONS */
+.maxwell-section {
+    background: #080e1c;
+}
+
+.maxwell-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.equation-card {
+    background: linear-gradient(135deg, #132944, #101629);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #294968;
+}
+
+.equation-card h3 {
+    color: #39c6ff;
+    margin-bottom: 20px;
+}
+
+.big-formula {
+    font-size: 24px;
+    color: #ffffff;
+    padding: 20px 0;
+    overflow-wrap: anywhere;
+}
+
+.equation-card p {
+    color: #aab8ce;
+}
+
+/* PRACTICE SECTION */
+.practice {
+    padding: 85px 10%;
+    text-align: center;
+    background: #101c30;
+}
+
+.practice > p:not(.section-label) {
+    color: #aab8ce;
+}
+
+.practice-list {
+    max-width: 700px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.practice-list p {
+    padding: 13px;
+    margin-bottom: 10px;
+    background: #182943;
+    border-radius: 7px;
+    color: #bdeeff;
+}
+
+/* FOOTER */
+footer {
+    padding: 45px 15px;
+    text-align: center;
+    background: #050a13;
+}
+
+footer h2 {
+    color: #39c6ff;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #aab8ce;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 65px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-container,
+    .maxwell-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .topics h2,
+    .introduction h2,
+    .practice h2 {
+        font-size: 28px;
+    }
+
+    .topics {
+        padding: 60px 6%;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .big-formula {
+        font-size: 19px;
+    }
+}

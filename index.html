@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electromagnetism | Physics Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">ELECTRO<span>PHYSICS</span></h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#electrostatics">Electrostatics</a></li>
+                <li><a href="#magnetism">Magnetism</a></li>
+                <li><a href="#maxwell">Maxwell</a></li>
+                <li><a href="#waves">EM Waves</a></li>
+                <li><a href="#practice">Practice</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="tagline">THE BEAUTY OF CLASSICAL PHYSICS</p>
+
+            <h1>Explore the World of
+                <span>Electromagnetism</span>
+            </h1>
+
+            <p class="hero-text">
+                Understand electric fields, magnetic fields,
+                Maxwell's equations and electromagnetic waves.
+                A complete learning destination for IIT JAM Physics.
+            </p>
+
+            <a href="#electrostatics" class="main-btn">
+                Start Exploring →
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img
+            src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=900"
+            alt="Scientific physics visualization">
+        </div>
+
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="introduction">
+        <p class="section-label">INTRODUCTION</p>
+
+        <h2>What is Electromagnetism?</h2>
+
+        <p>
+            Electromagnetism is a fundamental branch of physics
+            that studies the interaction between electric charges,
+            electric fields and magnetic fields.
+            It explains everything from the interaction of charged
+            particles to the propagation of light.
+        </p>
+    </section>
+
+    <!-- ELECTROSTATICS -->
+    <section class="topics" id="electrostatics">
+
+        <p class="section-label">CHAPTER 01</p>
+        <h2>Electrostatics</h2>
+
+        <p class="description">
+            The study of electric charges at rest and the fields
+            produced by them.
+        </p>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Coulomb's Law</h3>
+                <p>
+                    The electrostatic force between two point charges
+                    is proportional to the product of their charges
+                    and inversely proportional to the square of
+                    their separation.
+                </p>
+                <div class="formula">
+                    F = (1 / 4πε₀) × |q₁q₂| / r²
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Electric Field</h3>
+                <p>
+                    Electric field is the force experienced per
+                    unit positive test charge.
+                </p>
+                <div class="formula">
+                    E = F / q
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Gauss's Law</h3>
+                <p>
+                    The total electric flux through a closed surface
+                    depends on the enclosed charge.
+                </p>
+                <div class="formula">
+                    ∮ E · dA = Q / ε₀
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Electric Potential</h3>
+                <p>
+                    Electric potential is the work done per
+                    unit charge in bringing a test charge
+                    from infinity.
+                </p>
+                <div class="formula">
+                    V = W / q
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MAGNETISM -->
+    <section class="topics alternate" id="magnetism">
+
+        <p class="section-label">CHAPTER 02</p>
+        <h2>Magnetostatics</h2>
+
+        <p class="description">
+            Study magnetic fields produced by steady electric currents.
+        </p>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Biot-Savart Law</h3>
+                <p>
+                    Determines the magnetic field produced by a
+                    small current element.
+                </p>
+                <div class="formula">
+                    dB = (μ₀ / 4π) ×
+                    (I dl × r̂) / r²
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Ampere's Law</h3>
+                <p>
+                    The circulation of the magnetic field around
+                    a closed loop is related to the enclosed current.
+                </p>
+                <div class="formula">
+                    ∮ B · dl = μ₀ I
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Lorentz Force</h3>
+                <p>
+                    The force on a charged particle moving in
+                    electric and magnetic fields.
+                </p>
+                <div class="formula">
+                    F = q(E + v × B)
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Magnetic Flux</h3>
+                <p>
+                    Magnetic flux measures the magnetic field
+                    passing through a given surface.
+                </p>
+                <div class="formula">
+                    ΦB = ∫ B · dA
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ELECTROMAGNETIC INDUCTION -->
+    <section class="topics" id="induction">
+
+        <p class="section-label">CHAPTER 03</p>
+        <h2>Electromagnetic Induction</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Faraday's Law</h3>
+                <p>
+                    An induced EMF is produced by a changing
+                    magnetic flux through a circuit.
+                </p>
+                <div class="formula">
+                    ε = -dΦB / dt
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Lenz's Law</h3>
+                <p>
+                    The induced current opposes the change in
+                    magnetic flux that produces it.
+                </p>
+                <div class="formula">
+                    ε = -N dΦB / dt
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MAXWELL EQUATIONS -->
+    <section class="topics maxwell-section" id="maxwell">
+
+        <p class="section-label">CHAPTER 04</p>
+        <h2>Maxwell's Equations</h2>
+
+        <p class="description">
+            Four fundamental equations that unify electricity,
+            magnetism and optics.
+        </p>
+
+        <div class="maxwell-container">
+
+            <div class="equation-card">
+                <h3>1. Gauss's Law for Electricity</h3>
+                <div class="big-formula">
+                    ∇ · E = ρ / ε₀
+                </div>
+                <p>Electric charges act as sources of electric fields.</p>
+            </div>
+
+            <div class="equation-card">
+                <h3>2. Gauss's Law for Magnetism</h3>
+                <div class="big-formula">
+                    ∇ · B = 0
+                </div>
+                <p>There are no isolated magnetic monopoles in classical electromagnetism.</p>
+            </div>
+
+            <div class="equation-card">
+                <h3>3. Faraday's Law</h3>
+                <div class="big-formula">
+                    ∇ × E = -∂B / ∂t
+                </div>
+                <p>A changing magnetic field produces an electric field.</p>
+            </div>
+
+            <div class="equation-card">
+                <h3>4. Ampere-Maxwell Law</h3>
+                <div class="big-formula">
+                    ∇ × B = μ₀J + μ₀ε₀ ∂E / ∂t
+                </div>
+                <p>Electric current and changing electric fields produce magnetic fields.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EM WAVES -->
+    <section class="topics alternate" id="waves">
+
+        <p class="section-label">CHAPTER 05</p>
+        <h2>Electromagnetic Waves</h2>
+
+        <p class="description">
+            Electromagnetic waves are self-propagating disturbances
+            of electric and magnetic fields.
+        </p>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Wave Speed</h3>
+                <p>
+                    The speed of electromagnetic waves in vacuum.
+                </p>
+                <div class="formula">
+                    c = 1 / √(μ₀ε₀)
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Wave Relation</h3>
+                <p>
+                    The relation between frequency, wavelength
+                    and wave speed.
+                </p>
+                <div class="formula">
+                    c = νλ
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Poynting Vector</h3>
+                <p>
+                    Represents electromagnetic energy flow
+                    per unit area per unit time.
+                </p>
+                <div class="formula">
+                    S = (1 / μ₀)(E × B)
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Energy Density</h3>
+                <p>
+                    Total electric and magnetic energy stored
+                    per unit volume.
+                </p>
+                <div class="formula">
+                    u = ½ε₀E² + B²/(2μ₀)
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- IIT JAM PRACTICE -->
+    <section class="practice" id="practice">
+
+        <p class="section-label">TEST YOUR KNOWLEDGE</p>
+
+        <h2>IIT JAM Physics Preparation</h2>
+
+        <p>
+            Strengthen your fundamentals by studying these
+            important electromagnetism concepts.
+        </p>
+
+        <div class="practice-list">
+            <p>✓ Electric field and potential due to charge distributions</p>
+            <p>✓ Gauss's law and its applications</p>
+            <p>✓ Capacitors and dielectric materials</p>
+            <p>✓ Magnetic fields due to current distributions</p>
+            <p>✓ Electromagnetic induction</p>
+            <p>✓ Maxwell's equations and electromagnetic waves</p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>ELECTROPHYSICS</h2>
+
+        <p>
+            Exploring the fundamental laws of the universe.
+        </p>
+
+        <p class="copyright">
+            © 2026 Electromagnetism | Created with HTML & CSS
+        </p>
+    </footer>
+
+</body>
+</html>
